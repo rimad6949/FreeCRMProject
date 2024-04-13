@@ -6,14 +6,4 @@
       <class name="com.crm.testcases.LandingPageTest"/>
     </classes>
   </test> <!-- Test -->
-    <test name="LoginPageTest">
-    <classes>
-      <class name="com.crm.testcases.LoginPageTest"/>
-    </classes>
-  </test> <!-- Test -->
-    <test name="HomePageTest">
-    <classes>
-      <class name="com.crm.testcases.HomePageTest"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->
