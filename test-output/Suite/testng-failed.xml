@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="LoginPageTest(failed)">
+  <test thread-count="5" name="LandingPageTest(failed)">
     <classes>
-      <class name="com.crm.testcases.LoginPageTest">
+      <class name="com.crm.testcases.CRMTestcases">
         <methods>
-          <include name="loginPageTest"/>
+          <include name="crmTestcases"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.testcases.LoginPageTest -->
+      </class> <!-- com.crm.testcases.CRMTestcases -->
     </classes>
-  </test> <!-- LoginPageTest(failed) -->
-  <test thread-count="5" name="HomePageTest(failed)">
-    <classes>
-      <class name="com.crm.testcases.HomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="homePageTest"/>
-        </methods>
-      </class> <!-- com.crm.testcases.HomePageTest -->
-    </classes>
-  </test> <!-- HomePageTest(failed) -->
+  </test> <!-- LandingPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

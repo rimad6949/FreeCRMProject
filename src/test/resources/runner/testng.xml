@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="LandingPageTest">
     <classes>
-      <class name="com.crm.testcases.LandingPageTest"/>
+      <class name="com.crm.testcases.CRMTestcases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

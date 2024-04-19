@@ -25,7 +25,7 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
 	
 	//We are not mentioning the driver as "static" because we want the browser to quit that after each testcase 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Properties config = new Properties();
 	public FileInputStream fis;
 	public Logger log = LogManager.getLogger(BaseTest.class.getName());

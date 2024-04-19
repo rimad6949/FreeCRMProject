@@ -25,13 +25,13 @@ public class LoginPage extends BasePage {
 	public WebElement loginBtn;
 	
 	
-	public void loginIntoApp() {
+	public ContactPage loginIntoApp() {
 		
 		landingPageloginBtn.click();
 		email_textbox.sendKeys("dasrima476@gmail.com");
 		password_textbox.sendKeys("Test1234$");
 		loginBtn.click();
-		//return new HomePage(driver);		
+		return new ContactPage(driver);		
 		
 	}
 
