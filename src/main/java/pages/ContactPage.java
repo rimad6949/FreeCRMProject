@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import basePage.BasePage;
 
@@ -52,7 +54,6 @@ public class ContactPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div[2]/form/div[2]/div[2]/div/div/input")
 	public WebElement searchTextbox;
 
-
 	@FindBy(name = "identifier")
 	public WebElement identifierTextbox;
 
@@ -73,6 +74,42 @@ public class ContactPage extends BasePage {
 		identifierTextbox.sendKeys("Quality Engineer");
 		Thread.sleep(2000);
 		saveBtn.click();
+	}
+
+	// Editing the created Contact
+	@FindBy(xpath = "//*[@id=\"dashboard-toolbar\"]/div[2]/div/a[1]/button")
+	public WebElement editIcon;
+
+	@FindBy(name = "description")
+	public WebElement descriptionTextbox;
+
+	public void editContact() throws InterruptedException {
+
+		editIcon.click();
+		Thread.sleep(2000);
+
+		descriptionTextbox.sendKeys("This contact if for Rima Das");
+		Thread.sleep(2000);
+
+		saveBtn.click();
+	}
+
+	// Delete a contact
+	@FindBy(xpath = "//*[@id=\"dashboard-toolbar\"]/div[2]/div/button[4]")
+	public WebElement deleteContact;
+
+	@FindBy(xpath = "/html/body/div[4]/div/div[1]")
+	public WebElement getHeader;
+
+	@FindBy(xpath = "/html/body/div[4]/div/div[3]/button[2]")
+	public WebElement deleteBtn;
+
+	public void deleteContact() {
+		deleteContact.click();
+		String delete = getHeader.getText();
+		System.out.println(delete);
+		deleteBtn.click();
+
 	}
 
 }

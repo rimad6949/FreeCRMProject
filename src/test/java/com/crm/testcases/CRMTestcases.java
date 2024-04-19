@@ -14,12 +14,12 @@ public class CRMTestcases extends BaseTest{
 	@Test
 	public void crmTestcases() throws InterruptedException {
 		
-		LandingPage landing = new LandingPage(driver);
-		Thread.sleep(2000);
-		landing.navigateToAbout();
-		Thread.sleep(2000);
-		landing.navigateToAutomotiveCRMFromCRM();
-		Thread.sleep(2000);
+//		LandingPage landing = new LandingPage(driver);
+//		Thread.sleep(2000);
+//		landing.navigateToAbout();
+//		Thread.sleep(2000);
+//		landing.navigateToAutomotiveCRMFromCRM();
+//		Thread.sleep(2000);
 		
 		LoginPage login = new LoginPage(driver);
 		login.loginIntoApp();
@@ -35,7 +35,9 @@ public class CRMTestcases extends BaseTest{
 		System.out.println("Navigating to contact page");
 		contact.navigateToContactPage();
 		contact.createAContact();
-		
+		contact.editContact();
+		contact.deleteContact();
+		//contact.editFromContactHomePage();
 	}
 
 }
